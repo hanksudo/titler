@@ -1,0 +1,25 @@
+{
+  "name": "node-titler",
+  "version": "0.0.1",
+  "description": "Easy way to copied title and link to a specific format.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hankwang/titler.git"
+  },
+  "author": "Hank Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hankwang/titler/issues"
+  },
+  "homepage": "https://github.com/hankwang/titler",
+  "dependencies": {
+    "commander": "~2.1.0",
+    "cheerio": "~0.13.1",
+    "request": "~2.33.0"
+  },
+  "bin": {
+    "titler": "bin/titler"
+  },
+  "preferGlobal": "true"
+}
