@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var path = require('path');
+var program = require('commander');
+var titler = require('../lib');
+var pkg = require(path.join(__dirname, '..', 'package.json'));
+
+program
+    .usage('[url]')
+    .version(pkg.version);
+
+program.on('--help', function() {
+    console.log('  Examples:');
+    console.log('');
+    console.log('    $ titler http://www.google.com');
+    console.log('');
+});
+
+program
+   .command('*')
+   .description('Fetch link title and auto copied.')
+   .action(function(url){
+        program.url = url;
+   });
+
+program.parse(process.argv);
+if (/^https?:\/\//.test(program.url)) {
+    titler(program.url);
+} else {
+    program.help();
+}
