@@ -16,7 +16,7 @@ npm install -g titler
 titler http://www.google.com
 ```
 
-output:
+the content below will auto copied to your clipboard:
 
 ```
 - [Google](http://www.google.com)
