@@ -1,5 +1,5 @@
 {
-  "name": "node-titler",
+  "name": "titler",
   "version": "0.0.1",
   "description": "Easy way to copied title and link to a specific format.",
   "main": "index.js",
@@ -18,8 +18,11 @@
     "cheerio": "~0.13.1",
     "request": "~2.33.0"
   },
+  "preferGlobal": "true",
   "bin": {
     "titler": "bin/titler"
   },
-  "preferGlobal": "true"
+  "engines": {
+    "node": "*"
+  }
 }

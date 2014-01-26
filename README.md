@@ -1,4 +1,17 @@
-titler
-=====
+# Titler
 
-Easy way to copied title and link to a specific format.
+Titler.js - fetch web content and auto copied specific format
+
+demo output:
+
+```
+- (Title)[https://github.com/hankwang/titler]
+```
+
+## Installing Titler
+
+Install globally using npm:
+
+```
+npm install -g titler
+```
