@@ -1,5 +1,7 @@
 # Titler
 
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/hankwang/titler/counters/views-24h.png)](https://sourcegraph.com/github.com/hankwang/titler)
+
 Titler.js - fetch web content and auto copied specific format
 
 ## Installing Titler
