@@ -1,6 +1,6 @@
 # Titler
 
-[![Build Status](https://secure.travis-ci.org/hankwang/titler.png?branch=master)](https://travis-ci.org/hankwang/titler) [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/hankwang/titler/counters/views-24h.png)](https://sourcegraph.com/github.com/hankwang/titler)
+[![Build Status](https://travis-ci.org/hankwang/titler.png?branch=master)](https://travis-ci.org/hankwang/titler) [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/hankwang/titler/counters/views-24h.png)](https://sourcegraph.com/github.com/hankwang/titler)
 
 Titler.js - fetch web content and auto copied specific format
 
