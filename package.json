@@ -1,6 +1,6 @@
 {
   "name": "titler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Titler.js - fetch web content and auto copied specific format",
   "main": "index.js",
   "repository": {
