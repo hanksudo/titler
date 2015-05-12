@@ -2,27 +2,27 @@
   "name": "titler",
   "version": "0.0.2",
   "description": "Titler.js - fetch web content and auto copied specific format",
-  "main": "index.js",
+  "main": "index",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hankwang/titler.git"
+    "url": "git://github.com/hanksudo/titler.git"
   },
-  "author": "Hank Wang",
+  "author": "Hank Wang <drapho@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hankwang/titler/issues"
+    "url": "https://github.com/hanksudo/titler/issues"
   },
-  "homepage": "https://github.com/hankwang/titler",
-  "dependencies": {
-    "commander": "~2.1.0",
-    "cheerio": "~0.13.1",
-    "request": "~2.33.0"
-  },
+  "homepage": "https://github.com/hanksudo/titler",
   "preferGlobal": "true",
-  "bin": {
-    "titler": "bin/titler"
-  },
   "engines": {
-    "node": "*"
+    "node": ">= 0.6.x"
+  },
+  "bin": {
+    "titler": "cli.js"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "commander": "^2.8.1",
+    "request": "^2.55.0"
   }
 }
