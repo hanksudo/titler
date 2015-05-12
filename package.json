@@ -1,7 +1,7 @@
 {
   "name": "titler",
   "version": "0.0.2",
-  "description": "Titler.js - fetch web content and auto copied specific format",
+  "description": "Titler.js - fetch web content and auto copied as specific format",
   "main": "index",
   "repository": {
     "type": "git",

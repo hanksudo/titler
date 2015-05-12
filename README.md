@@ -1,25 +1,30 @@
 # Titler
 
-[![Build Status](https://travis-ci.org/hanksudo/titler.png?branch=master)](https://travis-ci.org/hanksudo/titler) [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/hanksudo/titler/counters/views-24h.png)](https://sourcegraph.com/github.com/hanksudo/titler)
+[![Build Status](https://api.travis-ci.org/hanksudo/titler.svg)](https://travis-ci.org/hanksudo/titler)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/hanksudo/titler/counters/views-24h.png)](https://sourcegraph.com/github.com/sudo/titler)
+[![NPM Version](http://img.shields.io/npm/v/titler.svg?style=flat)](https://www.npmjs.org/package/titler)
+[![NPM Downloads](https://img.shields.io/npm/dm/titler.svg?style=flat)](https://www.npmjs.org/package/titler)
 
-Titler.js - fetch web content and auto copied specific format
+Titler.js - fetch web content and auto copied as specific format
 
-## Installing Titler
-
-Install globally using npm:
+## Installation
 
 ```
-npm install -g titler
+npm install titler -g
 ```
 
 ## Usage
 
-```
-titler http://www.google.com
+``` bash
+titler http://github.com
 ```
 
 the content below will auto copied to your clipboard:
 
 ```
-- [Google](http://www.google.com)
+- [GitHub · Build software better, together.](https://github.com)
 ```
+
+## Licenese
+
+MIT © [Hank Wang](https://github.com/hanksudo)
