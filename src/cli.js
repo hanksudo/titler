@@ -2,31 +2,27 @@
 'use strict';
 
 var path = require('path');
-var cli = require('commander');
-var titler = require('./');
 var pkg = require(path.join(__dirname, '../package.json'));
+var program = require('commander');
+var titler = require('./titler');
 
-cli
+program
   .version(pkg.version)
   .usage('<url>');
 
-cli.on('--help', function() {
-  console.log('  Usage:');
-  console.log('');
-  console.log('    $ titler http://github.com');
-  console.log('    $ titler cnn.com');
-  console.log('');
-});
-
-cli
-  .command('*')
+program
   .description(pkg.description)
   .action(function(url) {
-    cli.url = url;
-  });
+    program.url = url;
+  }).on('--help', function() {
+    console.log('  Examples:');
+    console.log('');
+    console.log('    $ titler http://github.com');
+    console.log('    $ titler cnn.com');
+    console.log('');
+  })
+  .parse(process.argv);
 
-cli.parse(process.argv);
+if (!program.url) program.help();
 
-if (!cli.url) cli.help();
-
-titler(cli.url);
+titler(program.url);
