@@ -1,21 +1,19 @@
 # Titler
 
-[![Build Status](https://api.travis-ci.org/hanksudo/titler.svg)](https://travis-ci.org/hanksudo/titler)
-[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/hanksudo/titler/counters/views-24h.png)](https://sourcegraph.com/github.com/sudo/titler)
-[![NPM Version](http://img.shields.io/npm/v/titler.svg?style=flat)](https://www.npmjs.org/package/titler)
-[![NPM Downloads](https://img.shields.io/npm/dm/titler.svg?style=flat)](https://www.npmjs.org/package/titler)
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url] [![Build Status][travis-image]][travis-url]
+[![Coverage Status](https://coveralls.io/repos/hanksudo/titler/badge.svg?branch=master)](https://coveralls.io/r/hanksudo/titler?branch=master)
 
-Titler.js - fetch web content and auto copied as specific format
+Auto copy web title and url as specific format.
 
 ## Installation
 
-```
-npm install titler -g
+```bash
+npm install -g titler
 ```
 
 ## Usage
 
-``` bash
+```bash
 titler http://github.com
 ```
 
@@ -25,6 +23,20 @@ the content below will auto copied to your clipboard:
 - [GitHub · Build software better, together.](https://github.com)
 ```
 
-## Licenese
+Rendered
 
-MIT © [Hank Wang](https://github.com/hanksudo)
+- [GitHub · Build software better, together.](https://github.com)
+
+## License
+
+[MIT License](https://github.com/hanksudo/titler/blob/master/LICENSE)
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
+
+[npm-url]: https://npmjs.org/package/titler
+[npm-version-image]: http://img.shields.io/npm/v/titler.svg?style=flat
+[npm-downloads-image]: http://img.shields.io/npm/dm/titler.svg?style=flat
+
+[travis-url]: https://travis-ci.org/hanksudo/titler.svg?branch=master
+[travis-image]: http://img.shields.io/travis/hanksudo/titler/master.svg?style=flat
