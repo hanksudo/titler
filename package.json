@@ -1,6 +1,6 @@
 {
   "name": "titler",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Auto copy web title and url as specific format.",
   "main": "src",
   "repository": {
