@@ -2,15 +2,15 @@
 'use strict';
 
 var path = require('path');
-var program = require('commander');
+var cli = require('commander');
 var titler = require('./');
-var pkg = require(path.join(__dirname, 'package.json'));
+var pkg = require(path.join(__dirname, '../package.json'));
 
-program
+cli
     .usage('[url]')
     .version(pkg.version);
 
-program.on('--help', function() {
+cli.on('--help', function() {
     console.log('  Usage:');
     console.log('');
     console.log('    $ titler http://github.com');
@@ -18,17 +18,17 @@ program.on('--help', function() {
     console.log('');
 });
 
-program
+cli
    .command('*')
    .description(pkg.description)
    .action(function(url) {
-        program.url = url;
+        cli.url = url;
     });
 
-program.parse(process.argv);
+cli.parse(process.argv);
 
-if (!program.url) {
-    program.help();
+if (!cli.url) {
+    cli.help();
 }
 
-titler(program.url);
+titler(cli.url);

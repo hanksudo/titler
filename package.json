@@ -1,8 +1,8 @@
 {
   "name": "titler",
   "version": "0.0.2",
-  "description": "Titler.js - fetch web content and auto copied as specific format",
-  "main": "index",
+  "description": "Auto copy web title and url as specific format.",
+  "main": "src",
   "repository": {
     "type": "git",
     "url": "git://github.com/hanksudo/titler.git"
@@ -12,13 +12,12 @@
   "bugs": {
     "url": "https://github.com/hanksudo/titler/issues"
   },
-  "homepage": "https://github.com/hanksudo/titler",
-  "preferGlobal": "true",
+  "homepage": "https://github.com/hanksudo/titler#readme",
   "engines": {
     "node": ">= 0.6.x"
   },
   "bin": {
-    "titler": "cli.js"
+    "titler": "src/cli.js"
   },
   "dependencies": {
     "cheerio": "^0.19.0",
