@@ -2,7 +2,7 @@
 'use strict';
 
 var path = require('path');
-var pkg = require(path.join(__dirname, '../package.json'));
+var pkg = require(path.join(__dirname, 'package.json'));
 var program = require('commander');
 var titler = require('./titler');
 

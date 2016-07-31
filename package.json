@@ -2,7 +2,20 @@
   "name": "titler",
   "version": "0.1.0",
   "description": "Auto copy web title and url as specific format.",
-  "main": "src",
+  "keywords": [
+    "cli",
+    "titler",
+    "title"
+  ],
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "commander": "^2.9.0",
+    "request": "^2.74.0"
+  },
+  "main": "index",
+  "bin": {
+    "titler": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/hanksudo/titler.git"
@@ -16,12 +29,5 @@
   "engines": {
     "node": ">= 0.6.x"
   },
-  "bin": {
-    "titler": "src/cli.js"
-  },
-  "dependencies": {
-    "cheerio": "^0.19.0",
-    "commander": "^2.9.0",
-    "request": "^2.74.0"
-  }
+  "scripts": {}
 }
