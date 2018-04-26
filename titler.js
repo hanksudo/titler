@@ -17,7 +17,7 @@ module.exports = function(url) {
   request({
     url: url,
     headers: {
-        'User-Agent': 'Titler/0.0.2'
+        'User-Agent': 'Titler/0.1.1'
         // 'User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
     }
   }, function(err, res, body) {
@@ -25,7 +25,7 @@ module.exports = function(url) {
       var _link = res.request.href;
 
       var $ = cheerio.load(body);
-      var title = $('title').text().trim();
+      var title = $('head title').text().trim();
       var result = util.format(copiedTemplate, title, _link);
       childProcess.exec('echo "' + result + '" | pbcopy', function(child_err, stdout, stderr) {
         if (stderr) {
