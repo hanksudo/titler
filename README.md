@@ -14,7 +14,7 @@ npm install -g titler
 ## Usage
 
 ```bash
-titler http://github.com
+titler https://github.com
 ```
 
 the content below will auto copied to your clipboard:
